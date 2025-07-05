@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/action_page.php">
+        <div>
+            <h1>Pizza Order Form</h1>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="pdd">Preferred Delivery Date:</label>
+            <input type="text" id="pdd" name="pdd" value="mm/dd/yyyy"><br><br>
+        </div>
+        
+        <div>
+            <label for="size"> Size</label><br>
+            <input type="radio" id="small" name="size" value="CSS">
+            <label for="small">Small</label>
+
+            <input type="radio" id="medium" name="size" value="CSS">
+            <label for="medium">Medium</label>
+
+            <input type="radio" id="large" name="size" value="CSS">
+            <label for="large">Large</label><br><br>
+        </div>
+
+        <div>
+            <label for="flavor">Flavor</label><br>
+            <input type="checkbox" id="hawaiian" name="hawaiian" value="Hawaiian">
+            <label for="hawaiian">Hawaiian (Php 150.000)</label> 
+            
+            <select name="hawaiian" id="hawaiian">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select><br>
+
+            <input type="checkbox" id="pepperoni" name="pepperoni" value="Pepperoni">
+            <label for="pepperoni">Pepperoni (Php 140.000)</label> 
+            
+            <select name="pepperoni" id="pepperoni">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select><br>
+
+            <input type="checkbox" id="vegetable" name="vegetable" value="Vegetable">
+            <label for="vegetable">Vegetable (Php 130.000)</label> 
+            
+            <select name="vegetable" id="vegetable">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+            </select><br><br>
+        </div>
+
+        <div>
+            <label for="creditcarnum">Credit Card Number:</label>
+            <input type="number" id="creditcarnum" name="creditcarnum" required><br><br>
+
+            <label for="pinnumber">PIN:</label>
+            <input type="password" id="pinnumber" name="pinnumber" required><br><br>
+
+            <label for="additionalnote">Additional Note:</label><br>
+            <textarea name="additionalnote" id="additionalnote"></textarea><br><br>
+        </div>
+
+        <input type="submit" value="Submit Order"><br><br>
+
+
+    </form>
+</body>
+</html>
